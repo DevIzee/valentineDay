@@ -1,5 +1,4 @@
-```md
-# ❤️ Valentine Yes/No Interactive Page
+## ❤️ Valentine Yes/No Interactive Page
 
 A playful, fully responsive Valentine’s Day interactive web page built with **pure HTML, CSS, and vanilla JavaScript** — no frameworks, no dependencies.
 
@@ -13,7 +12,7 @@ This project recreates a classic **Yes / No** interaction where:
 
 ---
 
-## ✨ Features
+### ✨ Features
 
 - Framework-free (HTML / CSS / JS only)
 - Cursor & proximity-based interaction
@@ -24,7 +23,7 @@ This project recreates a classic **Yes / No** interaction where:
 
 ---
 
-## 🎯 Purpose
+### 🎯 Purpose
 
 This project is a fun, romantic micro-experience and a creative frontend experiment showcasing:
 
@@ -35,22 +34,17 @@ This project is a fun, romantic micro-experience and a creative frontend experim
 
 ---
 
-## 🛠 Customization
+### 🛠 Customization
 
 All visuals (emojis, text, animations) are easily replaceable.  
 Ideal as a base for personalized Valentine pages or interactive frontend experiments.
 
 ---
 
-## 📱 Compatibility
+### 📱 Compatibility
 
 - Modern desktop browsers
 - Mobile devices (iOS / Android)
 - No external dependencies
 
 ---
-
----
-
-Enjoy ❤️
-```
