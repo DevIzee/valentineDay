@@ -5,8 +5,9 @@
 
 body {
   margin: 0;
-  background: #f6c1cc;
   height: 100vh;
+  background: radial-gradient(circle, #fbcfe8, #f472b6);
+  overflow: hidden;
 }
 
 .container {
@@ -17,45 +18,55 @@ body {
 }
 
 .card {
-  background: #ffeef2;
-  padding: 24px;
-  border-radius: 20px;
+  background: #fff0f6;
+  padding: 26px;
+  border-radius: 22px;
   width: 90%;
   max-width: 360px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,.2);
+  transform: scale(.9);
+  opacity: 0;
+}
+
+.card.enter {
+  animation: enter 0.6s ease-out forwards;
+}
+
+@keyframes enter {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .image-placeholder {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 16px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #f9a8d4, #f472b6);
+  font-size: 64px;
+  margin-bottom: 12px;
 }
 
 h1 {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
 }
 
 .buttons {
   position: relative;
-  height: 60px;
+  height: 70px;
 }
 
 button {
   border: none;
-  padding: 12px 22px;
+  padding: 12px 26px;
   font-size: 1rem;
   border-radius: 999px;
   cursor: pointer;
+  transition: transform .2s ease;
 }
 
 #yesBtn {
   background: #ec4899;
   color: white;
-  margin-right: 10px;
 }
 
 #noBtn {
@@ -63,5 +74,19 @@ button {
   position: absolute;
   left: 55%;
   top: 0;
-  transition: transform 0.25s ease;
+}
+
+/* Snow */
+.snow span,
+.hearts span {
+  position: fixed;
+  top: -10px;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
 }

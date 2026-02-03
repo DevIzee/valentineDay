@@ -46,5 +46,3 @@ Ideal as a base for personalized Valentine pages or interactive frontend experim
 - Modern desktop browsers
 - Mobile devices (iOS / Android)
 - No external dependencies
-
----
